@@ -47,7 +47,7 @@ class Player {
 
   }
    deletePlayers(){
-    var ref=database.ref('players');
-    ref.remove();
+    var ref1=database.ref('players');
+    ref1.set();
   }
 }
