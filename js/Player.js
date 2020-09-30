@@ -44,5 +44,10 @@ class Player {
     playerInfoRef.on("value",(data)=>{
       allPlayers = data.val();
     })
+
+  }
+   deletePlayers(){
+    var ref=database.ref('players');
+    ref.remove();
   }
 }
